@@ -117,6 +117,10 @@
     border: black solid 15px;  
 }
 
+#foto img:hover{
+    border: rgb(58, 58, 58) solid 15px; 
+}
+
 #foto h2{
     font-size: 30px;
     padding: 40px;
