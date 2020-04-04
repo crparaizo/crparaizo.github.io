@@ -129,7 +129,7 @@
     text-shadow: 1px 0px 0px #000, -1px 0px 0px #000, 0px 1px 0px #000, 0px -1px 0px #000;
 }
 
-.hey{
+.blocoConhecimento{
     display: flex;
     /* justify-content: space-around; */
     margin: 50px 30px 30px 30px;
@@ -165,19 +165,18 @@ dd{
     text-align: right;
 }
 
-.hey-pai {
+.blocoConhecimento-pai {
     text-align: center;
     display: flex;
 }
 
-#curiosidade{
+#cursos{
     width: 100%;
-    height: 345px;
     background: #000;
     color:white;
 }
 
-#curiosidade h2 {
+#cursos h2 {
     text-align: center;
     font-size: 25px;
     padding: 30px 30px 0 30px;
@@ -185,7 +184,7 @@ dd{
     text-transform: uppercase;    
 }
 
-#curiosidade p {
+#cursos p {
     text-align: justify;
     margin:  0 70px;
     font-size: 15px;
@@ -269,7 +268,6 @@ dd{
 
 #exp{
     width: 100%;
-    height: 330px;
     background: #000;
     color: white;
 }
@@ -323,14 +321,18 @@ dd{
     padding-right: 50px;
 }
 
-.hello {
+.profissional {
     display: flex;
-    justify-content: space-around;
-    margin: 25px
+    justify-content: space-evenly;
 }
 
-.hello li{
-    margin-bottom: 30px;
+.profissional ul {
+    display: flex;
+}
+
+.profissional li{
+    margin:  0 30px 30px 30px;
+    padding:  0 70px;
 }
 
 .bye {
@@ -343,13 +345,13 @@ dd{
     margin-bottom: 30px;
 }
 
-.good {
+.caracteristicas {
     display: flex;
     justify-content: space-around;
     margin: 50px 30px 30px 30px;
 }
 
-.good li {
+.caracteristicas li {
     margin-bottom: 30px;
 }
 
@@ -384,6 +386,17 @@ dd{
     margin: auto; 
     color: #2954B6;
 }
+
+.creditos{
+    background-color: #000;
+    width: 100%;
+}
+
+.creditos p{
+    color: white;
+    text-align: center;
+}
+
 
 @media screen and (max-width: 420px) {
     .inicio {
