@@ -381,8 +381,10 @@ dd{
     width: 250px;
     height: 150px;
     margin-bottom: 1vh;
+    /* COLOCAR REZISE NONE AQUI - TIRAR INLINE */
 }
 
+/* MUDAR PARA TYPE SUBMIT - TIRAR INLINE */
 .contato-itens form input[type="button"] {
     width: 100px;
     margin: auto; 
