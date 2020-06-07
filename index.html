@@ -8,6 +8,7 @@
     <title>Cândida Rosa Paraizo</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="javascript/script.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 
 </head>
 
@@ -16,7 +17,7 @@
         <div class="inicio">
             <div class="banner-text">
                 <h1>Cândida Paraizo</h1>
-                <br>                
+                <br>
                 <h2>Desenvolvedora FULL-STACK</h2>
             </div>
         </div>
@@ -177,30 +178,31 @@
         <section id="contato">
             <h2>Contato ( em manutenção...)</h2>
             <div class="contato-itens">
-                <form action="">
+                <form id="formulario" action="">
                     <label for="">
-                        <input type="text" placeholder="Nome..." required maxlength="30" minlength="5" disabled>
+                        <input type="text" id="nome" placeholder="Nome..." required maxlength="30" minlength="5">
                     </label>
                     <br>
                     <br>
                     <label for="">
-                        <input type="email" placeholder="E-mail..." required maxlength="30" minlength="5" disabled>
+                        <input type="email" id="email" placeholder="E-mail..." required maxlength="30" minlength="5">
                     </label>
                     <br>
                     <br>
                     <label for="">
-                        <input type="tel" placeholder="Telefone..." required maxlength="14" minlength="8" disabled>
+                        <input type="text" id="telefone" placeholder="Telefone..." required maxlength="14"
+                            minlength="8">
                     </label>
                     <br>
                     <br>
                     <label for="">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Digite sua mensagem..."
-                            disabled></textarea>
+                        <textarea style="resize: none;" name="" id="mensagem" cols="30" rows="10"
+                            placeholder="Digite sua mensagem..."></textarea>
                     </label>
                     <br>
                     <br>
                     <label for="">
-                        <input type="button" value="Enviar" style="margin-bottom: 30px" disabled>
+                        <input style="color: #2954B6; font-weight: bold;" type="submit" value="Enviar" style="margin-bottom: 30px">
                         <!-- border radius,border.... -->
                     </label>
                     <br>
@@ -239,8 +241,47 @@
     </footer>
 
 </body>
-<script>
 
+
+<!-- Menu Smooth Scroll -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("a").on('click', function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 3000, function () {
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+
+    //Form de Contato
+    $('#formulario').submit(function (event) {
+        var name = $('#nome').val();
+        var email = $('#email').val();
+        var telefone = $('#telefone').val();
+        var mensagem = $('#mensagem').val();
+
+        event.preventDefault();
+        $.ajax({
+            url: 'https://gmail.us18.list-manage.com/subscribe/post',
+            method: 'POST',
+            data: { u: '315498ad23ca3e720ad86864c', id: '9e6f5ec3ad', EMAIL: email, NAME: name, TELEFONE: telefone, MENSAGEM: mensagem },
+            dataType: 'jsonp',
+            success: function () {
+                alert("Dados enviados com sucesso");
+            }
+        });
+    });
+
+    $('#formulario').submit(function (event) {
+        alert("Dados enviados com sucesso")
+    });
 </script>
 
 </html>
