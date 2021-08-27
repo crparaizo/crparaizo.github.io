@@ -1,5 +1,3 @@
-/* html{scroll-behavior:smooth} */
-
 * {
     margin: 0;
     padding: 0;
@@ -28,13 +26,6 @@
     text-align: center;
     background: rgba(255, 255, 255, 0.3);
 }
-
-/* .inicio h1{
-    transform: translateX(275px) translateY(-90px);
-}
-.inicio h2{
-    transform: translateX(283px) translateY(-70px);
-} */
 
 .menu {
     flex: 3;    
@@ -107,8 +98,6 @@
     text-align: center;
     color: #16a7a7;
     border-right: dashed 3px #000;    
-    /* display: flex;
-    justify-content: center; */
 }
 
 #foto img{
@@ -131,17 +120,57 @@
     text-shadow: 1px 0px 0px #000, -1px 0px 0px #000, 0px 1px 0px #000, 0px -1px 0px #000;
 }
 
+#exp{
+    width: 100%;
+    background: #000;
+    color: white;
+}
+
+#exp h2 {
+    text-align: center;
+    font-size: 25px;
+    padding: 30px;
+    color: #16a7a7;
+    text-transform: uppercase;
+}
+
+#exp p {
+    text-align: justify;
+    margin:  0 70px;
+    font-size: 15px;
+}
+
+.profissional {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profissional ul {
+    display: flex;
+}
+
+.profissional li{
+    margin:  0 30px 30px 30px;
+    padding:  0 70px;
+}
+
 .blocoConhecimento{
     display: flex;
-    /* justify-content: space-around; */
-    margin: 50px 30px 30px 30px;
+    margin: 30px;
     font-size: 16.5px;
     color: white;
     font-weight: bold;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
     text-align: center;    
+}
+
+.correcaoEstudos{
+    margin: 0 !important;
+}
+
+.blocoConhecimento h3 {
+    color: #2954B6;
+    margin-bottom: 10px;
 }
 
 dd{
@@ -194,12 +223,11 @@ dd{
 
 #port{
     width: 100%;
-    height: 400px;
-    background: white;
-    
+    background: white;    
     align-items: center;
     flex-direction: column;
     display: flex;
+    padding-bottom: 20px;
 }
 
 #port h3{
@@ -211,7 +239,6 @@ dd{
 #port h2 {
     text-align: center;
     font-size: 25px;
-    padding-top: 30px;
     color: #16a7a7;
     text-transform: uppercase;
 }
@@ -234,8 +261,7 @@ dd{
 #contato{
     width: 100%;
     height: auto;
-    background: #000;
-    
+    background: #000;    
 }
 
 #contato h2 {
@@ -246,10 +272,8 @@ dd{
     text-transform: uppercase;
 }
 
-
 #forma {
     width: 100%;
-    height: 340px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -268,25 +292,7 @@ dd{
     font-size: 15px;
 }
 
-#exp{
-    width: 100%;
-    background: #000;
-    color: white;
-}
 
-#exp h2 {
-    text-align: center;
-    font-size: 25px;
-    padding: 30px;
-    color: #16a7a7;
-    text-transform: uppercase;
-}
-
-#exp p {
-    text-align: justify;
-    margin:  0 70px;
-    font-size: 15px;
-}
 
 .lin img {
     max-width: 80px;
@@ -306,8 +312,7 @@ dd{
     flex-direction: row;
     display: flex;
     justify-content: center;
-    margin-top: 25px;
-    color: #2954B6;
+    color: #2954B6;  
 }
 
 .tudo .tp{
@@ -321,20 +326,6 @@ dd{
     padding: 20px;
     padding-left: 225px;
     padding-right: 50px;
-}
-
-.profissional {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.profissional ul {
-    display: flex;
-}
-
-.profissional li{
-    margin:  0 30px 30px 30px;
-    padding:  0 70px;
 }
 
 .bye {
@@ -381,10 +372,8 @@ dd{
     width: 250px;
     height: 150px;
     margin-bottom: 1vh;
-    /* COLOCAR REZISE NONE AQUI - TIRAR INLINE */
 }
 
-/* MUDAR PARA TYPE SUBMIT - TIRAR INLINE */
 .contato-itens form input[type="button"] {
     width: 100px;
     margin: auto; 
@@ -400,35 +389,3 @@ dd{
     color: white;
     text-align: center;
 }
-
-
-@media screen and (max-width: 420px) {
-    .inicio {
-        background-image: url("../imagens/Lapis-para-Esfumar-Olhos-True-Color-1\,08g-Preto-Intenso.jpg");
-        background-size: cover;
-        width: auto;
-        height: 500px;
-        justify-content:center;
-        align-items: center;
-        flex-direction: column;
-        display: flex;
-        font-size: 10px;
-        color:wheat;
-    }   
-    .menu ul {
-        flex-direction: column;
-        height: 150px;
-    }
-    .menu ul a {
-        background: none;
-        text-decoration-line: underline;
-        padding: 0.4em;
-    }
-}
-
-/* background: rgba(255, 255, 230, 0.3); */
-/* background: rgba(255, 200, 175, 0.3) */
-
-
-
-

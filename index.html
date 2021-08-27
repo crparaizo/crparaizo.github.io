@@ -7,10 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cândida Rosa Paraizo</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive_style.css">
     <script src="javascript/script.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-    <!-- RESOLVER PROBLEMAS DOS COMENTÁRIOS -->
 
+    <!-- ARRUMAR RESPONSIVIDADE -->
     <!-- Por que JS ñ está funcionando?? -->
 </head>
 
@@ -23,13 +24,13 @@
                 <h2>Desenvolvedora FULL-STACK</h2>
             </div>
         </div>
-        <nav class="menu">
+        <nav class="menu" id="menu">
             <ul>
                 <li>
                     <a href="#sobre">Sobre</a>
                 </li>
                 <li>
-                    <a href="#profissional">Experiências Profissionais</a>
+                    <a href="#exp">Experiências Profissionais</a>
                 </li>
                 <li>
                     <a href="#forma">Experiências Acadêmicas</a>
@@ -52,7 +53,7 @@
 
             <section id="sobre">
                 <h2>Sobre mim</h2>
-                <p>Olá, meu nome é Cândida Paraizo e tenho 20 anos. Tenho formação pelo curso técnico em Desenvolvimento
+                <p>Olá, meu nome é Cândida Paraizo e tenho 21 anos. Tenho formação de técnico em Desenvolvimento
                     de Sistemas
                     pelo SENAI - SP e atualmente estou cursando a faculdade de Ciência da Computação pela FMU. Abaixo
                     estão
@@ -75,7 +76,7 @@
 
             <div class="profissional" id="profissional">
                 <ul>
-                    <li>Estágio - Itaú Unibanco - 2020 </li>
+                    <li>Estágio - Itaú Unibanco - 2021 </li>
                     <li>Estágio - Secretaria de Inovação e Tecnologia - 2019</li>
                     <li>Jovem Aprendiz Galeria dos Pães - SP - 2018</li>
                 </ul>
@@ -85,13 +86,13 @@
         <section id="forma">
             <h2>Conhecimentos Acadêmicos</h2>
 
-            <!-- FAZER TÍTULOS APARECEREM -->
             <div class="blocoConhecimento-pai">
                 <div class="blocoConhecimento">
                     <h3>Linguagens:</h3>
 
-                    <dd>C++</dd>
+                    <dd>C</dd>
                     <dd>C#</dd>
+                    <dd>PhP</dd>
                     <dd>Java</dd>
                     <dd>Python</dd>
                 </div>
@@ -99,10 +100,10 @@
                 <div class="blocoConhecimento">
                     <h3>Front-End:</h3>
 
-                    <dd>Html5, Css3 e Javascript</dd>
-                    <dd>Booststrap</dd>
-                    <dd>UX / UI</dd>
                     <dd>React</dd>
+                    <dd>UX / UI</dd>
+                    <dd>Booststrap</dd>
+                    <dd>Html5, Css3 e Javascript</dd>
                     <dd>Illustrator, Photoshop e Adobe XD</dd>
                 </div>
 
@@ -116,26 +117,27 @@
                 <div class="blocoConhecimento">
                     <h3>Banco de Dados:</h3>
 
-                    <dd>SQL Server</dd>
                     <dd>MySQL</dd>
-                    <dd>Azure Cosmos DB</dd>
+                    <dd>Firebase</dd>
                     <dd>Mongo DB</dd>
+                    <dd>SQL Server</dd>
+                    <dd>Azure Cosmos DB</dd>
                 </div>
 
                 <div class="blocoConhecimento">
                     <h3>Mobile:</h3>
 
-                    <dd>Android Studio</dd>
-                    <dd>React Native</dd>
                     <dd>Kotlin</dd>
+                    <dd>React Native</dd>
+                    <dd>Android Studio</dd>
                 </div>
 
                 <div class="blocoConhecimento">
                     <h3>Metodologias:</h3>
 
+                    <dd>OKR</dd>
                     <dd>Scrum</dd>
                     <dd>KanBan</dd>
-                    <dd>OKR</dd>
                     <dd>BEM (Css)</dd>
                 </div>
 
@@ -144,7 +146,6 @@
 
                     <dd>Arduino</dd>
                     <dd>Pacote Office</dd>
-                    <dd>Firebase</dd>
                 </div>
             </div>
 
@@ -156,12 +157,13 @@
                 <ul>
                     <li>Participei do Projeto Guri entre os anos de 2008 e 2013 e por isso sei tocar, basicamente,
                         bateria e
-                        percussão, saxofone tenor, clarinete, saxofone alto e teclado.</li>
-                    <li>Participei de diversas olímpiadas, dentre elas estão: XIX Olimpíada Brasileira de Astronomia e
+                        percussão, saxofone tenor, clarinete, saxofone alto, teclado e violão.</li>
+                    <li>Participei de diversas olímpiadas, dentre elas: XIX Olimpíada Brasileira de Astronomia e
                         Astronáutica
                         (2016) e Olimpíada Paulista de Física (2015). </li>
-                    <li>Adoro ler livros nas horas livres, principalmente se for de suspense ou romance policial</li>
-                    <li>Como hobbie jogo games online na internet, principalmente os grátis. Os meus favoritos são World
+                    <li>Adoro ler livros nas horas livres, principalmente se for de suspense ou romance policial (minha
+                        autoral preferida é Agatha Christie)</li>
+                    <li>Como hobbie jogo online, principalmente se for gratuito. Os meus favoritos são World
                         of Warcraft
                         e Smite.</li>
                 </ul>
@@ -170,10 +172,11 @@
         <section id="port">
             <h2>Estudando neste exato momento...</h2>
             <h3>(Foco total!!!)</h3>
-            <div class="blocoConhecimento">
-                <dd>PHP</dd>
+            <div class="blocoConhecimento correcaoEstudos">
                 <dd>VBA</dd>
                 <dd>VBS</dd>
+                <dd>RTC</dd>
+                <dd>Control M</dd>
                 <dd>AutoHot Key</dd>
                 <dd>Automation Anywhere</dd>
             </div>
@@ -181,7 +184,7 @@
         <section id="contato">
             <h2>Contato</h2>
             <div class="contato-itens">
-                <form id="formulario" action="">
+                <form id="formulario">
                     <label for="">
                         <input type="text" id="nome" placeholder="Nome..." required maxlength="30" minlength="5">
                     </label>
@@ -207,7 +210,6 @@
                     <label for="">
                         <input style="color: #2954B6; font-weight: bold;" type="submit" value="Enviar"
                             style="margin-bottom: 30px">
-                        <!-- border radius,border.... -->
                     </label>
                     <br>
                 </form>
@@ -217,7 +219,7 @@
     <footer>
         <div class="tudo">
             <div class="tp">
-                <a href="#sobre">
+                <a href="#menu">
                     <img src="imagens/if_double-arrow-up_383150.png" alt="">
                 </a>
                 <h2>Topo</h2>
@@ -242,13 +244,12 @@
             </div>
         </div>
         <div class="creditos">
-            <p>Feito por Cândida Rosa Paraizo - 2019/2020</p>
+            <p>Feito por Cândida Rosa Paraizo - 2019/2021</p>
         </div>
     </footer>
 
 </body>
 
-<!-- LIMPAR CAMPOS DPS QUE A MENSAGEM FOR ENVIADA -->
 <!-- Menu Smooth Scroll -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
@@ -287,6 +288,7 @@
 
     $('#formulario').submit(function (event) {
         alert("Dados enviados com sucesso")
+        document.getElementById("formulario").reset();
     });
 
 </script>
